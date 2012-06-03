@@ -1,1 +1,160 @@
-Outlook for Mac Exchange Setup 4.0 is a new set of scripts based on my Entourage Exchange Setup scripts that assist a Macintosh administrator in the pre-configuration of Outlook for Mac settings so that users will have common default preferences and will not be exposed to the details of having to set up their own Exchange accounts. Every company’s network is different so this script was written to provide enough ideas for a novice scripter to be able to adapt it for use in his network in just a few minutes.
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf350
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\info
+{\title ReadMe}
+{\subject Entourage Exchange Setup 3.0}
+{\author William Smith}
+{\*\company The Entourage Help Page}
+{\*\copyright Copyright 2008 William Smith}}\margl1440\margr1440\vieww15320\viewh16420\viewkind1\viewscale125
+\deftab720
+\pard\pardeftab720\ql\qnatural
+
+\f0\b\fs36 \cf0 Outlook Exchange Setup 4.0
+\b0\fs30\fsmilli15360 \
+\pard\pardeftab720\ql\qnatural
+
+\fs25\fsmilli12800 \cf0 \'a9 Copyright 2008-2010 William Smith\
+bill@officeformachelp.com\
+\
+\
+
+\b\fs29\fsmilli14800 Copyright and Creative Commons license
+\b0 \
+
+\fs25\fsmilli12800 \
+Except where otherwise noted, this work is licensed under {\field{\*\fldinst{HYPERLINK "http://creativecommons.org/licenses/by/3.0/"}}{\fldrslt http://creativecommons.org/licenses/by/3.0/}}.\
+\
+These scripts may be freely modified for personal or commercial purposes but may not be republished for profit without prior consent.\
+\
+If you find this script useful or have ideas for improving it, please let me know. It should be compatible with both Outlook 2011.\
+\
+\
+
+\b\fs29\fsmilli14800 Purpose of the Outlook Exchange Setup 4.0 scripts
+\b0 \
+
+\fs25\fsmilli12800 \
+This set of two AppleScripts is intended to be modified by an administrator to assist his Outlook users with the setups of their Exchange server accounts. Every company's network is different so the primary script was written to provide enough ideas for a novice scripter to be able to adapt it for use in his network in just a few minutes.\
+\
+The user's Mac OS X Name (also called the "Display name" if using Active Directory) and email address are assumed to be in the form of:\
+\
+	"Last, First" and "first.last@domain.com"\
+\
+But it can easily be modified for other variations such as:\
+\
+	"First Last" and "first@domain.com\
+\
+It works especially well if the Mac is bound to Active Directory where the user's Mac OS X Short Name will match the "User logon name" in Active Directory.\
+\
+The 
+\b OutlookExchangeSetup4.0.scpt
+\b0  script must first be edited in "AppleScript Editor.app" found in /Applications/Utilities and modified with server names appropriate to the network. If the user's computer login (short name, long name, etc.) is consistent with his Exchange server's login then it will work with little need for modification.\
+\
+\
+
+\b\fs29\fsmilli14800 How do these scripts differ from the previous scripts?
+\b0 \
+
+\fs25\fsmilli12800 \
+The basic scripts have been updated for Outlook as part of Office for Mac 2011. AppleScript syntax has changed as well as default behavior of the application itself. Anything specific to Microsoft Entourage has been removed.\
+\
+\
+
+\b\fs31\fsmilli15800 Support
+\b0\fs25\fsmilli12800 \
+\
+E-mail me at {\field{\*\fldinst{HYPERLINK "mailto:bill@officeformachelp.com?Subject=Outlook%20Exchange%20Setup%204.0%20script"}}{\fldrslt bill@officeformachelp.com}}. I will make every effort to answer questions about the scripts and work to correct bugs you may find.\
+\
+\
+
+\b\fs29\fsmilli14800 Change log
+\b0\fs34 \
+\pard\pardeftab720\ql\qnatural
+
+\fs30 \cf0 \
+\pard\pardeftab720\ql\qnatural
+
+\fs25\fsmilli12800 \cf0 4.0.1\
+\
+\'95 Separated E-mail address and Display Name settings into two simpler properties to better address multiple types of account settings.\
+\'95\'a0Corrected some settings where first name and last name may have been reversed.\
+\'95\'a0Simplified the creation of the Me Contact record. Depending on the E-mail address format chosen, this part of the script may have thrown an error but appeared as if the schedule or work offline settings were throwing the error.
+\fs34 \
+\pard\pardeftab720\ql\qnatural
+
+\fs30 \cf0 \
+\pard\pardeftab720\ql\qnatural
+
+\fs25\fsmilli12800 \cf0 4.0\
+\
+\'95 Updated scripts for Outlook as part of Office for Mac 2011.
+\fs34 \
+\pard\pardeftab720\ql\qnatural
+
+\fs30 \cf0 \
+\pard\pardeftab720\ql\qnatural
+
+\fs25\fsmilli12800 \cf0 3.1.0\
+\
+\'95 Included compatibility for Entourage Web Services Edition used with Exchange Web Services
+\fs34 \
+\pard\pardeftab720\ql\qnatural
+
+\fs30 \cf0 \
+\pard\pardeftab720\ql\qnatural
+
+\fs25\fsmilli12800 \cf0 3.0.1\
+\
+\'95 Corrected an issue where hyphenated names were not correctly parsed when provided a full name.\
+\'95\'a0Included instructions to set Entourage to work offline.\
+\'95\'a0Included instructions to uncheck Entourage's option to alert the user about a script modifying the address book.\
+\'95 Changed the setup script to set the user's "email address" rather than the "default email address".\
+\'95\'a0Added single quotes in "Copy Entourage Files.app" script to allow for folder names with spaces.
+\fs34 \
+\pard\pardeftab720\ql\qnatural
+
+\fs30 \cf0 \
+\pard\pardeftab720\ql\qnatural
+
+\fs25\fsmilli12800 \cf0 3.0\
+\
+\'95 Modified the original setup script to run under an Entourage schedule\
+\'95 Added step to create the user's Me contact record\
+\'95\'a0Added an option for a different format of the Exchange server address for Exchange Server 2007\
+\'95\'a0Included 
+\b Entourage Exchange Setup 3.0 Administrator's Guide
+\b0 \
+\'95\'a0Added fix for correctly setting maximum search results for LDAP (bug in Entourage 2008 only)\
+\
+2.0\
+\
+\'95 Added the ability set Kerberos authentication with principal name (Entourage 2008 only)\
+\'95 Added seventh E-mail option (shortname@domain.com)\
+\'95 Added fix for correctly setting SSL authentication for LDAP (bug in Entourage 2008 only)\
+\
+1.2\
+\
+Note: The following bullet points complete the list of options that can be set for Exchange, Public folder and LDAP settings missing from the original scripts.\
+\
+\'95 Added the ability to set the Exchange Server SSL\
+\'95 Added the ability to set the Exchange Server SSL port number\
+\'95 Changed FreeBusyServer property name to PublicFolderServer to better match Entourage's field name\
+\'95 Added the ability to set the Public Folder Server SSL\
+\'95 Added the ability to set the Public Folder Server SSL port number\
+\'95 Added the ability to enable LDAP Server authentication\
+\'95 Added the ability to set the LDAP Server SSL\
+\'95 Added the ability to set the LDAP Server SSL port number\
+\'95 Added the ability to set the LDAP Server maximum results returned\
+\
+\'95 Added the option to turn off the "Send & Receive All" schedule. This schedule applies to POP and IMAP accounts only and does nothing with Exchange accounts.\
+\
+\'95 Added a "Setup check" section to alert users if an Exchange account has already been configured in Entourage. The script is only necessary the first time a user needs to configure Entourage but some users double-click the script again instead of just launching Entourage. This is an effort to prevent a user from setting up a second account in Entourage pointing to the same Exchange account.\
+\
+\'95 Changed the Account Name to display "Mailbox - Last, First" (or whatever selected name format is selected) to match the display that Outlook for Windows users see.\
+\
+\'95 Added a customizable error message in case the Exchange account setup fails.\
+\
+1.1\
+\
+\'95 Added the ability to specify the LDAP search base.}
