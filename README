@@ -1,4 +1,4 @@
-Outlook Exchange Setup 4.0.1
+Outlook Exchange Setup 4.5
 © Copyright 2008-2012 William Smith
 bill@officeformachelp.com
 
@@ -12,7 +12,7 @@ These scripts may be freely modified for personal or commercial purposes but may
 If you find this script useful or have ideas for improving it, please let me know. It is compatible with Outlook 2011.
 
 
-Purpose of the Outlook Exchange Setup 4.0.1 scripts
+Purpose of the Outlook Exchange Setup 4.5 scripts
 
 This set of two AppleScripts is intended to be modified by an administrator to assist his Outlook users with the setups of their Exchange server accounts. Every company's network is different so the primary script was written to provide enough ideas for a novice scripter to be able to adapt it for use in his network in just a few minutes.
 
@@ -26,7 +26,7 @@ But it can easily be modified for other variations such as:
 
 It works especially well if the Mac is bound to Active Directory where the user's Mac OS X Short Name will match the "User logon name" in Active Directory.
 
-The OutlookExchangeSetup4.0.1.scpt script must first be edited in "AppleScript Editor.app" found in /Applications/Utilities and modified with server names appropriate to the network. If the user's computer login (short name, long name, etc.) is consistent with his Exchange server's login then it will work with little need for modification.
+The OutlookExchangeSetup4.5.scpt script must first be edited in "AppleScript Editor.app" found in /Applications/Utilities and modified with server names appropriate to the network. If the user's computer login (short name, long name, etc.) is consistent with his Exchange server's login then it will work with little need for modification.
 
 
 How do these scripts differ from the previous scripts?
@@ -40,6 +40,13 @@ E-mail me at bill@officeformachelp.com. I will make every effort to answer quest
 
 
 Change log
+
+4.5
+
+• Added support for Entourage import.
+• Corrected Active Directory pathing for email lookups.
+• Added support for Lion Active Directory pathing.
+• Changed to "system info" to get short name.
 
 4.0.1
 
