@@ -45,8 +45,10 @@ Change log
 
 • Added support for Entourage import.
 • Corrected Active Directory pathing for email lookups.
-• Added support for Lion Active Directory pathing.
+• Added support for Lion and Mountain Lion Active Directory pathing.
 • Changed to "system info" to get short name.
+• Corrected an issue where first and last name were not set when using dscl (thank you to Matthew Cahill).
+• Corrected in-script instructions 2e: Name should be "Exchange Setup" not "Outlook Setup"
 
 4.0.1
 
