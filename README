@@ -41,6 +41,10 @@ E-mail me at bill@officeformachelp.com. I will make every effort to answer quest
 
 Change log
 
+4.5.1
+
+• Added missing ldap port property to account setup.
+
 4.5
 
 • Added support for Entourage import.
