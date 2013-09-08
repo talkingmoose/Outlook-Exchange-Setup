@@ -1,5 +1,5 @@
 Outlook Exchange Setup 4.5
-© Copyright 2008-2012 William Smith
+© Copyright 2008-2013 William Smith
 bill@officeformachelp.com
 
 
@@ -40,6 +40,11 @@ E-mail me at bill@officeformachelp.com. I will make every effort to answer quest
 
 
 Change log
+
+4.5.2
+
+• Bug fix. In the "Begin account setup" section changed default upgradeResponse to "New" instead of "No.
+• Bug fix. In the "Begin account setup" section changed to getting count of OfficeIdentities instead of IdentityChoice.
 
 4.5.1
 
